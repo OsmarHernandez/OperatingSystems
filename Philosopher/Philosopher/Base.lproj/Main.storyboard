@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad10_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Philosopher" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1112" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lL9-FU-ZZ2">
+                                <rect key="frame" x="20" y="40" width="48" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OVi-no-rZe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfI-fY-Lo2">
+                                <rect key="frame" x="20" y="105" width="69" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t98-d2-iy3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VnH-RU-02n">
+                                <rect key="frame" x="1038" y="40" width="54" height="48"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                <state key="normal" title="New"/>
+                                <connections>
+                                    <action selector="newButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQM-No-H3d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filosofo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmr-hx-s7U">
+                                <rect key="frame" x="486" y="105" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="ZSR-jb-JDU"/>
+                                    <constraint firstAttribute="height" constant="140" id="vDk-YG-p9b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filosofo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-RR-YWg">
+                                <rect key="frame" x="678" y="570" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="ZXy-wR-PGz"/>
+                                    <constraint firstAttribute="height" constant="140" id="nsK-vg-mYx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filosofo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6J7-YD-Xsv">
+                                <rect key="frame" x="253" y="287" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="4nq-8M-Hbu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="7xB-gh-skc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8o-Am-Wrt">
+                                <rect key="frame" x="321" y="227" width="49.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCg-Dl-3v0">
+                                <rect key="frame" x="281" y="479" width="49.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nx8-Af-r4N">
+                                <rect key="frame" x="786.5" y="479" width="49.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filosofo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb9-3y-qQj">
+                                <rect key="frame" x="298" y="570" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="5AC-QD-e12"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="kcg-2V-lAG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filosofo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zC8-8F-GoP">
+                                <rect key="frame" x="723" y="287" width="140" height="140"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="IYs-qa-A7g"/>
+                                    <constraint firstAttribute="height" constant="140" id="xMs-Xm-ctz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="maK-xe-fug">
+                                <rect key="frame" x="531.5" y="624" width="49.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1da-cT-hjH">
+                                <rect key="frame" x="763.5" y="227" width="49.5" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gfI-fY-Lo2" firstAttribute="top" secondItem="lL9-FU-ZZ2" secondAttribute="bottom" constant="17" id="1xt-bh-TGY"/>
+                            <constraint firstItem="1da-cT-hjH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="28U-3v-ycI"/>
+                            <constraint firstItem="gfI-fY-Lo2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2pU-Ey-EqI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VnH-RU-02n" secondAttribute="trailing" constant="20" id="5Ta-6g-sXq"/>
+                            <constraint firstItem="zC8-8F-GoP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6J7-YD-Xsv" secondAttribute="trailing" constant="8" symbolic="YES" id="6zg-pD-sM8"/>
+                            <constraint firstItem="1da-cT-hjH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mmr-hx-s7U" secondAttribute="trailing" constant="8" symbolic="YES" id="7mY-Z6-gXF"/>
+                            <constraint firstItem="KC8-RR-YWg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="maK-xe-fug" secondAttribute="trailing" constant="8" symbolic="YES" id="8JG-SU-ZZV"/>
+                            <constraint firstItem="nx8-Af-r4N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cCg-Dl-3v0" secondAttribute="trailing" constant="8" symbolic="YES" id="B95-tL-o2j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KC8-RR-YWg" secondAttribute="trailing" constant="294" id="BdD-Yu-CU2"/>
+                            <constraint firstItem="f8o-Am-Wrt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ci4-Zo-KjI"/>
+                            <constraint firstItem="maK-xe-fug" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Doi-kP-8HR"/>
+                            <constraint firstItem="lL9-FU-ZZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hf6-dI-x50"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zC8-8F-GoP" secondAttribute="trailing" constant="249" id="JoO-NK-33D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="maK-xe-fug" secondAttribute="bottom" constant="177" id="SMT-CD-1qV"/>
+                            <constraint firstItem="mmr-hx-s7U" firstAttribute="leading" secondItem="gfI-fY-Lo2" secondAttribute="trailing" constant="397" id="Sar-yw-s7Q"/>
+                            <constraint firstItem="VnH-RU-02n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="SnG-uG-7iR"/>
+                            <constraint firstItem="mmr-hx-s7U" firstAttribute="leading" secondItem="f8o-Am-Wrt" secondAttribute="trailing" constant="115.5" id="Vf6-8U-AMn"/>
+                            <constraint firstItem="Rb9-3y-qQj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vy2-GM-rC8"/>
+                            <constraint firstItem="cCg-Dl-3v0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="281" id="abl-1X-q97"/>
+                            <constraint firstItem="lL9-FU-ZZ2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cbf-nX-SQ5"/>
+                            <constraint firstItem="nx8-Af-r4N" firstAttribute="top" secondItem="zC8-8F-GoP" secondAttribute="bottom" constant="52" id="dOT-xI-b8D"/>
+                            <constraint firstItem="maK-xe-fug" firstAttribute="leading" secondItem="Rb9-3y-qQj" secondAttribute="trailing" constant="93.5" id="fBh-D7-kOO"/>
+                            <constraint firstItem="VnH-RU-02n" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lL9-FU-ZZ2" secondAttribute="trailing" constant="8" symbolic="YES" id="gFe-0Q-J6Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rb9-3y-qQj" secondAttribute="bottom" constant="124" id="jfa-gu-DWm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nx8-Af-r4N" secondAttribute="trailing" constant="276" id="mHR-5d-3zG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KC8-RR-YWg" secondAttribute="bottom" constant="124" id="nC9-Jk-dUN"/>
+                            <constraint firstItem="zC8-8F-GoP" firstAttribute="top" secondItem="1da-cT-hjH" secondAttribute="bottom" constant="27" id="p0c-2S-L9T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1da-cT-hjH" secondAttribute="trailing" constant="299" id="q0Y-oi-YYk"/>
+                            <constraint firstItem="mmr-hx-s7U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="85" id="qN5-DZ-lmX"/>
+                            <constraint firstItem="mmr-hx-s7U" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t5M-cB-7Am"/>
+                            <constraint firstItem="6J7-YD-Xsv" firstAttribute="top" secondItem="f8o-Am-Wrt" secondAttribute="bottom" constant="27" id="tok-bx-mAv"/>
+                            <constraint firstItem="cCg-Dl-3v0" firstAttribute="top" secondItem="6J7-YD-Xsv" secondAttribute="bottom" constant="52" id="uZi-eT-NsK"/>
+                            <constraint firstItem="f8o-Am-Wrt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="207" id="wVG-7t-yqQ"/>
+                            <constraint firstItem="6J7-YD-Xsv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="253" id="y2H-9i-7ee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="philosopherLabels" destination="mmr-hx-s7U" collectionClass="NSMutableArray" id="dM4-xA-TOU"/>
+                        <outletCollection property="forkLabels" destination="f8o-Am-Wrt" collectionClass="NSMutableArray" id="4sX-1p-el8"/>
+                        <outletCollection property="philosopherLabels" destination="6J7-YD-Xsv" collectionClass="NSMutableArray" id="DXG-An-Ki0"/>
+                        <outletCollection property="philosopherLabels" destination="Rb9-3y-qQj" collectionClass="NSMutableArray" id="hvt-LD-n7w"/>
+                        <outletCollection property="philosopherLabels" destination="zC8-8F-GoP" collectionClass="NSMutableArray" id="qdR-Lp-5md"/>
+                        <outletCollection property="philosopherLabels" destination="KC8-RR-YWg" collectionClass="NSMutableArray" id="TS5-wo-fsf"/>
+                        <outletCollection property="forkLabels" destination="cCg-Dl-3v0" collectionClass="NSMutableArray" id="tTR-64-LOC"/>
+                        <outletCollection property="forkLabels" destination="maK-xe-fug" collectionClass="NSMutableArray" id="d76-na-1Ne"/>
+                        <outletCollection property="forkLabels" destination="nx8-Af-r4N" collectionClass="NSMutableArray" id="G4y-Vb-f2d"/>
+                        <outletCollection property="forkLabels" destination="1da-cT-hjH" collectionClass="NSMutableArray" id="c17-QJ-P5w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.6953125" y="132.8125"/>
+        </scene>
+    </scenes>
+</document>
